@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    background: #fff5f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #000000;
+    font-size: 75pt;
+    margin: 0;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 7px;
+  }
+  
+  .subtitle {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: #000000;
+    margin: 0px;
+  }
+  
+  header {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    min-height: 100px;
+  }
+  
+  nav {
+    background-color: #F6C6D7;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #fff5f8;
+  }
+  
+  /* Contact section layout with flexbox */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 45%;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.contact-container {
+    flex-basis: 45%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fdf8fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 2px;;
+}
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #F6C6D7;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+  }
