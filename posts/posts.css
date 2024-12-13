@@ -213,11 +213,15 @@ nav a:hover {
   }
   
   /* Post image */
+  .post-image {
+    position: relative;
+  }
   .post-image img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
+    display:inline-block;
   }
   
   /* Post content */
@@ -226,6 +230,7 @@ nav a:hover {
     font-size: 16px;
     margin: 10px 0;
     font-family: 'Lora', serif;
+    line-height: 30px;;
   }
 
   footer {
@@ -237,5 +242,36 @@ nav a:hover {
     font-family: 'Lora', serif;
     font-weight: bold;
   }
-  
+
+  .subheading {
+    font-weight: bold;
+    font-size:20px;
+    margin-bottom: 10px;
+  }
+  .ind{
+    text-indent: 30px;
+    margin-bottom: 10px;
+  }
+  .sincerely {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin: 20px;
+}
+.sarah {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin: 20px;
+    text-indent: 30px;   
+}
+.overlay-text {
+    position: absolute;
+    font-size: 12px;
+    font-family: 'Lora', serif;
+    left: 10px;
+    bottom: 35px;
+    color: white; /* Ensure the text is visible on top of the image */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background for readability */
+    padding: 5px;
+    border-radius: 10px;
+}
   

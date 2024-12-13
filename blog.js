@@ -2,10 +2,10 @@
 const blogPosts = [
   {
     title: "Sarah, contemplate why you are so happy.",
-    content: "Happiness, for me, is not a fleeting emotion... It's a constant state of being. I wake up every day with the mindset that I am in control of my happiness, and that has been life-changing...",
+    content: "In this post, I touch on ten essential ways towards happiness: recognizing your greatest power, solitude, confidence, trusting in something greater, meaning, love, gratitude, social connection, health, and growth.",
     link: "posts/contemplate.html",
     image: "images/contemplate.png",
-    date: "November 26, 2024",
+    date: "November 30, 2024",
     topic: "SELF-DEVELOPMENT"
   },
   {
@@ -34,6 +34,14 @@ const blogPosts = [
   },
   {
     title: "Don't complain, rebuild yourself",
+    content: "Complaining doesn't change anything. If you want to see change in your life, focus on rebuilding yourself, step by step, day by day.",
+    link: "full-post5.html",
+    image: "images/can't hurt me.jpg",
+    date: "November 27, 2024",
+    topic: "MOTIVATION"
+  },
+  {
+    title: "Don't let their hate go to waste.",
     content: "Complaining doesn't change anything. If you want to see change in your life, focus on rebuilding yourself, step by step, day by day.",
     link: "full-post5.html",
     image: "images/can't hurt me.jpg",
@@ -146,6 +154,22 @@ const blogPosts = [
   },
   {
     title: "Have you forgotten who you are?",
+    content: "push",
+    link: "full-post14.html",
+    image: "images/buff sarah.jpg",
+    date: "Novemmber 1, 2024",
+    topic: "MOTIVATION"
+  },
+  {
+    title: "Once you commit, it's literally yours. If your mind knows it's not going to quit, it's going to find ways to push through.",
+    content: "push",
+    link: "full-post14.html",
+    image: "images/buff sarah.jpg",
+    date: "Novemmber 1, 2024",
+    topic: "MOTIVATION"
+  },
+  {
+    title: "I'm not lucky, I just know how to talk to myself",
     content: "push",
     link: "full-post14.html",
     image: "images/buff sarah.jpg",
