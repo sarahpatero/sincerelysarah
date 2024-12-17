@@ -72,8 +72,9 @@ footer {
 .parallax-container-1,
 .parallax-container-2 {
     position: relative;
-    width: 100%;
+    width: 75%;
     height: 75vh; /* Default height for larger screens */
+    margin: 0 auto;
     background-size: cover; /* Ensures image covers the container */
     background-position: center center; /* Keeps images centered */
     background-repeat: no-repeat;
