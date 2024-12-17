@@ -68,30 +68,28 @@ footer {
     font-weight: bold;
 
 }
-.parallax-container-1 {
-    position: relative;
-    width: 100%;
-    height: 75vh;
-    background-image: url('images/prom3.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;  /* Ensures background stays fixed for parallax effect */
-    transition: background-position 0.3s ease-out, height 0.3s ease-out; /* Smoother transitions */
-}
-
+/* Parallax Containers (Base Styles) */
+.parallax-container-1,
 .parallax-container-2 {
     position: relative;
     width: 100%;
-    height: 75vh;
-    background-image: url('images/aboutme.jpg');
-    background-size: cover;
-    background-position: center center;
+    height: 75vh; /* Default height for larger screens */
+    background-size: cover; /* Ensures image covers the container */
+    background-position: center center; /* Keeps images centered */
     background-repeat: no-repeat;
-    background-attachment: fixed;  /* Ensures background stays fixed for parallax effect */
-    transition: background-position 0.3s ease-out, height 0.3s ease-out; /* Smoother transitions */
+    transition: background-position 0.3s ease-out, height 0.3s ease-out; /* Smooth transitions */
 }
 
+/* Specific Background Images */
+.parallax-container-1 {
+    background-image: url('images/prom3.jpg');
+}
+
+.parallax-container-2 {
+    background-image: url('images/aboutme.jpg');
+}
+
+/* Overlay Text Styling */
 .overlay-text {
     position: absolute;
     font-family: 'Great Vibes', cursive;
@@ -101,18 +99,32 @@ footer {
     color: white;
     font-size: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center;  /* Center the text properly */
+    text-align: center; /* Center text alignment */
 }
 
-@media screen and (max-width: 768px) {
-    .parallax-container-1 {
-        background-size: cover;
-        background-position: center center;
-    }
-
+/* Media Query for Tablets and Smaller Screens */
+@media screen and (max-width: 1024px) {
+    .parallax-container-1,
     .parallax-container-2 {
-        background-size: cover;
-        background-position: center center;
+        background-attachment: scroll; /* Fix background issues on mobile devices */
+        height: 60vh; /* Adjust height for tablets */
+    }
+
+    .overlay-text {
+        font-size: 30px; /* Reduce font size for better readability */
     }
 }
 
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .parallax-container-1,
+    .parallax-container-2 {
+        background-attachment: scroll; /* Prevent parallax issues */
+        background-position: center top; /* Adjust image position for mobile */
+        height: 50vh; /* Reduce height for smaller screens */
+    }
+
+    .overlay-text {
+        font-size: 24px; /* Adjust text size for mobile */
+    }
+}
