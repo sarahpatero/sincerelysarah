@@ -45,6 +45,7 @@ body {
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Smooth transition for color */
   }
   
   nav a:hover {

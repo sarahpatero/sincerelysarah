@@ -41,6 +41,7 @@ nav a {
   margin: 0 10px;
   font-weight: bold;
   font-family: 'Lora', serif;
+  transition: color 0.3s ease-in-out; /* Smooth transition for color */
 }
 
 nav a:hover {
