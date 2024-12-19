@@ -17,6 +17,7 @@ body {
     font-weight: normal;
     font-style: italic;
     letter-spacing: 7px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(255, 128, 225, 0.7); /* Subtle black and pink shadow */
   }
   
   .subtitle {
