@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body { 
+    font-family: 'Lora', serif;
+    background: #fff5f8;
+    ; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+h1 { 
+    font-family: 'Great Vibes', cursive;
+    color: #000000; 
+    font-size: 75pt;
+    margin: 0;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 7px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(255, 128, 225, 0.7); /* Subtle black and pink shadow */
+}
+.subtitle {
+    font-family:'Lora', serif;
+    font-style: italic;
+    color:#000000;
+    margin: 0px;
+}
+header {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    min-height: 100px;
+}
+nav {
+    background: radial-gradient(circle, #F6C6D7, #fff5f8); /* Soft gradient towards the middle */
+    padding: 5px;
+    text-align: center;
+}
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Smooth transition for color */
+}
+
+nav a:hover {
+    color: #fff5f8;
+}
+.container {
+    background-color: #fff5f8 ;
+    color: #333333; /* Use dark text for readability */
+    margin: auto;
+}
+.Welcome p {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 40px;;
+}
+
+footer {
+    background: radial-gradient(circle, #F6C6D7, #fff5f8); /* Soft gradient towards the middle */
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
