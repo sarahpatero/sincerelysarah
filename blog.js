@@ -4,7 +4,7 @@ const blogPosts = [
     title: "Sarah, contemplate why you are so happy.",
     content: "In this post, I touch on ten essential ways towards happiness: recognizing your greatest power, solitude, confidence, trusting in something greater, meaning, love, gratitude, social connection, health, and growth.",
     link: "posts/contemplate.html",
-    image: "images/contemplate.png",
+    image: "/images/contemplate.PNG",
     date: "November 30, 2024",
     topic: "SELF-DEVELOPMENT"
   }
