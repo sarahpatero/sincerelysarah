@@ -60,6 +60,7 @@ nav a:hover {
     width: 90%;
     margin: 0 auto;
     line-height: 40px;;
+
 }
 
 footer {
@@ -70,4 +71,5 @@ footer {
     margin: auto;
     font-family: 'Lora', serif;
     font-weight: bold;
+
 }
