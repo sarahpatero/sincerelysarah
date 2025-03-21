@@ -254,6 +254,10 @@ nav a:hover {
     text-indent: 30px;
     margin-bottom: 10px;
   }
+  ol {
+    padding-bottom: 20px; /* Add space at the bottom of the list */
+    padding-left: 100px; /* Optional: Add space on the left if needed */
+}
   .sincerely {
     font-family: 'Great Vibes', cursive;
     font-size: 40px;

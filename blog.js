@@ -7,6 +7,22 @@ const blogPosts = [
     image: "/images/flag-dinner.jpg",
     date: "November 30, 2024",
     topic: "SELF-DEVELOPMENT"
+  },
+  {
+    title: "Be someone worth knowing.",
+    content: "Truly, live your life to the fullest. Fulfill your potential.",
+    link: "posts/besomeoneworthknowing.html",
+    image: "/images/flowersandbearclaw.jpg",
+    date: "January 28, 2025",
+    topic: "SELF-DEVELOPMENT"
+  },
+  {
+    title: "The BEST Hygiene Secrets Ever.",
+    content: "Niche and real hygiene secrets you didn't know you needed until now.",
+    link: "posts/hygiene.html",
+    image: "/images/hygiene post.jpg",
+    date: "March 20, 2025",
+    topic: "SELF-DEVELOPMENT"
   }
 ];
 

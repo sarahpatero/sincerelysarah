@@ -1,0 +1,127 @@
+.gallery {
+    background: linear-gradient(to bottom, #FFB6C1, #fff5f8); /* Light pink gradient */
+}
+
+/* Gallery Grid - No Gaps, Small Images */
+.grid {
+    column-count: 6;  /* More columns = smaller images */
+    column-gap: 0; /* No gap between images */
+}
+
+/* Remove Margins & Gaps */
+.gallery-item {
+    width: 100%;
+    max-width: 100%; /* Ensures images take full width */
+    margin: 0; /* No spacing */
+    border-radius: 0; /* No rounded corners */
+    display: block; /* Prevents inline spacing issues */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for darken effect */
+}
+
+/* Image Hover Effect */
+.gallery-item:hover {
+    filter: brightness(50%); /* Darken the image */
+}
+
+/* Image Container - Positioning for Caption */
+.image-container {
+    position: relative; /* This allows absolute positioning for the caption */
+    width: 100%; 
+    height: 100%; /* Ensure the image container has height */
+}
+
+/* Caption Styling */
+.caption {
+    position: absolute;
+    bottom: 10px; /* Position the caption at the bottom */
+    left: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for caption */
+}
+
+/* Show Caption on Hover */
+.image-container:hover .caption {
+    opacity: 1; /* Show caption when hovering over the container */
+}
+
+/* Pop-up Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* Smooth fade-out of overlay */
+}
+
+/* Pop-up Content */
+.popup-content {
+    background-color: #fff5f8;
+    padding: 20px; /* Increased padding to make content larger */
+    border-radius: 200px;
+    text-align: center;
+    box-shadow: 0 0 100px rgb(255, 0, 204);
+    width: 80%; /* Pop-up content will take 80% of screen width */
+    max-width: 600px; /* Maximum width to prevent it from being too wide */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    margin: auto;
+    font-family: 'Lora', serif;
+}
+
+.popup-content h2 {
+    font-size: 40px;
+    font-weight:lighter;
+    color: #000000; /* Light pink color for the heading */
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(255, 128, 225, 0.7); /* Subtle black and pink shadow */
+}
+
+.popup-content button {
+    background-color: #F6C6D7;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px; /* Rounded corners for the button */
+    transition: background-color 1.0s ease, transform 1.0s ease;
+    font-family: 'Lora', serif;
+}
+
+.popup-content button:hover {
+    background-color: #ffb4ce; /* Darker pink on hover */
+    color: white;
+    transition:color 1.0s ease, transform 1.0s ease;
+    transform: scale(1.2); /* Slight button zoom effect */
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 768px) {
+    .grid {
+        column-count: 3; /* Adjust for tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid {
+        column-count: 2; /* Adjust for mobile screens */
+    }
+}
+
+footer {
+    background: transparent;
+}
