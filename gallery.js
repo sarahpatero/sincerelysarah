@@ -44,3 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1000); // Wait 1 second to match the fade-out duration
     });
 });
+
+document.querySelectorAll('.gallery-item').forEach(img => {
+    img.addEventListener('click', event => {
+        event.preventDefault(); // Prevent default browser behavior
+    });
+});
+
