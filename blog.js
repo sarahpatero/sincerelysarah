@@ -2,7 +2,7 @@
 const blogPosts = [
   {
     title: "Sarah, contemplate why you are so happy.",
-    content: "In this post, I touch on ten essential ways towards happiness: recognizing your greatest power, solitude, confidence, trusting in something greater, meaning, love, gratitude, social connection, health, and growth.",
+    content: "Recognize your greatest power, solitude, confidence, trusting in something greater, meaning, love, gratitude, social connection, health, and growth.",
     link: "posts/contemplate.html",
     image: "/images/flag-dinner.jpg",
     date: "November 30, 2024",
@@ -17,13 +17,38 @@ const blogPosts = [
     topic: "SELF-DEVELOPMENT"
   },
   {
-    title: "The BEST Hygiene Secrets Ever.",
-    content: "Niche and real hygiene secrets you didn't know you needed until now.",
-    link: "posts/hygiene.html",
-    image: "/images/hygiene post.jpg",
-    date: "March 20, 2025",
+    title: "Behind the flag, beyond the floor.",
+    content: "A love letter to my sophomore year winterguard season.",
+    link: "posts/winterguard.html",
+    image: "/images/finals.jpg",
+    date: "April 16, 2025",
+    topic: "SELF-DEVELOPMENT"
+  },
+  {
+    title: "Do you ever just sit to enjoy the beauty.",
+    content: "Everything there is is right in front of you.",
+    link: "posts/beauty.html",
+    image: "/images/beauty.JPG",
+    date: "April 21, 2025",
+    topic: "SELF-DEVELOPMENT"
+  },
+  {
+    title: "Sarah's Rebirth: Year 2",
+    content: "Words of wisdom from my sophomore year of college.",
+    link: "posts/sophomore.html",
+    image: "/images/boishaki.jpg",
+    date: "May 8, 2025",
+    topic: "SELF-DEVELOPMENT"
+  },
+  {
+    title: "Don't hate the climb just because you're at the top.",
+    content: "Stop hating on your past self.",
+    link: "posts/past.html",
+    image: "/images/past.jpg",
+    date: "May 19, 2025",
     topic: "SELF-DEVELOPMENT"
   }
+  
 ];
 
 // Settings for pagination
