@@ -2,7 +2,7 @@
 const blogPosts = [
   {
     title: "Sarah, contemplate why you are so happy.",
-    content: "Recognize your greatest power, solitude, confidence, trusting in something greater, meaning, love, gratitude, social connection, health, and growth.",
+    content: "Started as a habit, ended as an identity.",
     link: "posts/contemplate.html",
     image: "/images/flag-dinner.jpg",
     date: "November 30, 2024",
@@ -10,7 +10,7 @@ const blogPosts = [
   },
   {
     title: "Be someone worth knowing.",
-    content: "Truly, live your life to the fullest. Fulfill your potential.",
+    content: "Cultvating depth of character.",
     link: "posts/besomeoneworthknowing.html",
     image: "/images/flowersandbearclaw.jpg",
     date: "January 28, 2025",
@@ -47,6 +47,22 @@ const blogPosts = [
     image: "/images/past.jpg",
     date: "May 19, 2025",
     topic: "SELF-DEVELOPMENT"
+  },
+  { 
+    title: "Don't put me in the same cage you put yourself in.",
+    content: "If you're scared of the world, that's on you!",
+    link: "posts/cage.html",
+    image:"/images/cagesquare.jpeg",
+    date: "May 23, 2025",
+    topic: "SELF-DEVELOPEMENT"
+  },
+  { 
+    title: "There's so much out there, Sarah.",
+    content: "Put it in perspective.",
+    link: "posts/somany.html",
+    image:"/images/lakeside.jpg",
+    date: "June 2, 2025",
+    topic: "SELF-DEVELOPEMENT"
   }
   
 ];
