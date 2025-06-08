@@ -36,7 +36,7 @@ const blogPosts = [
     title: "Sarah's Rebirth: Year 2",
     content: "Words of wisdom from my sophomore year of college.",
     link: "posts/sophomore.html",
-    image: "/images/boishaki.jpg",
+    image: "/images/boishaki.JPG",
     date: "May 8, 2025",
     topic: "SELF-DEVELOPMENT"
   },
