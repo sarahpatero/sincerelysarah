@@ -28,7 +28,7 @@ const blogPosts = [
     title: "Do you ever just sit to enjoy the beauty.",
     content: "Everything there is is right in front of you.",
     link: "posts/beauty.html",
-    image: "/images/beauty.JPG",
+    image: "/images/beauty.jpg",
     date: "April 21, 2025",
     topic: "SELF-DEVELOPMENT"
   },
