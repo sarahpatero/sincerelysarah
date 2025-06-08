@@ -63,6 +63,14 @@ const blogPosts = [
     image:"/images/lakeside.jpg",
     date: "June 2, 2025",
     topic: "SELF-DEVELOPEMENT"
+  },
+    { 
+    title: "Pretty aura privilege.",
+    content: "Beauty + Coherence + Receptivity.",
+    link: "posts/prettyaura.html",
+    image:"/images/aurasquare.jpg",
+    date: "June 8, 2025",
+    topic: "SELF-DEVELOPEMENT"
   }
   
 ];
