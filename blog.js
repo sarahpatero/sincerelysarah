@@ -52,7 +52,7 @@ const blogPosts = [
     title: "Don't put me in the same cage you put yourself in.",
     content: "If you're scared of the world, that's on you!",
     link: "posts/cage.html",
-    image:"/images/cagesquare.jpeg",
+    image:"/images/cagesquare.JPEG",
     date: "May 23, 2025",
     topic: "SELF-DEVELOPEMENT"
   },
