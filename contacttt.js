@@ -1,21 +1,25 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
 
+app.use(cors({
+  origin: 'https://sincerelysarah.me',
+  methods: ['POST'],
+}));
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Allow frontend files like HTML/CSS
+// Allow frontend files like HTML/CSS (optional if serving frontend elsewhere)
 app.use(express.static('public'));
 
-// Route for contact form
 app.post('/contact', (req, res) => {
   const { name, email, message } = req.body;
 
-  // Set up transporter (you can use Gmail for testing)
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
