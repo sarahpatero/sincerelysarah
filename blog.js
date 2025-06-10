@@ -64,12 +64,19 @@ const blogPosts = [
     date: "June 2, 2025",
     topic: "SELF-DEVELOPEMENT"
   },
-    { 
+  {
     title: "Pretty aura privilege.",
     content: "Beauty + Coherence + Receptivity.",
     link: "posts/prettyaura.html",
     image:"/images/aurasquare.jpg",
     date: "June 8, 2025",
+    topic: "SELF-DEVELOPEMENT"
+  },
+  { title: "Transcendence is found in the ordinary.",
+    content: "Travelling to other countries to &quot;find yourself&quot; is a cope.",
+    link: "posts/transcend.html",
+    image:"/images/transcend.PNG",
+    date: "June 10, 2025",
     topic: "SELF-DEVELOPEMENT"
   }
   

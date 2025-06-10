@@ -1,261 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Sarah Era: Gallery</title>
-    <link rel="stylesheet" href="gallery.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="images/rose.png" />
-    <link rel="preload" href="images/prom3.jpg" as="image">
-    <link rel="preload" href="images/aboutme.jpg" as="image">
-  </head>
-  <body>
-    <nav>
-      <a href="index.html">HOME</a>
-      <a href="blog.html">BLOG</a>
-      <a href="gallery.html">GALLERY</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="main.css" />
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="blog.html">BLOG</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
 
-    <div id="popup-overlay" class="popup-overlay">
-        <div class="popup-content">
-            <h2>Take a peek!</h2>
-            <button id="continue-button">Enter</button>
-        </div>
+  <style>
+    .gallery {
+      background: linear-gradient(to bottom, #FFB6C1, #fff5f8);
+    }
+
+    .grid {
+      column-count: 5;
+      column-gap: 0;
+opacity: 1;               /* Gallery is visible */
+visibility: visible;      /* Gallery visible */
+transition: filter 1s ease, opacity 1s ease;
+
+    }
+
+    .gallery-item {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      border-radius: 0;
+      display: block;
+      transition: filter 0.3s ease-in-out;
+    }
+
+    .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: default;
+  transition: filter 0.3s ease-in-out;
+  filter: brightness(30%);  /* initial dim */
+}
+
+
+    .image-container:hover {
+      filter: brightness(70%);
+    }
+
+    .image-container img {
+      pointer-events: none;
+      user-select: none;
+      width: 100%;
+      display: block;
+    }
+
+    .image-container.bright {
+  filter: brightness(100%) !important;
+}
+
+.image-container.bright:hover {
+  filter: brightness(75%) !important; /* Slight dim on hover */
+}
+
+
+
+    @media screen and (max-width: 768px) {
+      .grid {
+        column-count: 3;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .grid {
+        column-count: 2;
+      }
+    }
+
+    footer {
+      background: transparent;
+    }
+
+    /* Popup Overlay styles */
+    .popup-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 1s ease;
+    }
+
+    .popup-content {
+      background-color: #fff5f8;
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 100px rgb(255, 0, 204);
+      max-width: 400px;
+      font-family: 'Lora', serif;
+    }
+
+    .popup-content h2 {
+      font-family: 'Great Vibes', cursive;
+      font-weight: lighter;
+      font-size: 36px;
+      color: black;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      text-shadow: 3px 3px 5px rgba(0,0,0,0.5), 0 0 10px rgba(255,128,225,0.7);
+    }
+
+    #continue-button {
+      background-color: #F6C6D7;
+      color: black;
+      padding: 12px 25px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 30px;
+      font-family: 'Lora', serif;
+      transition: background-color 1s ease, transform 1s ease;
+    }
+
+    #continue-button:hover {
+      background-color: #ffb4ce;
+      color: white;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="popup-overlay" class="popup-overlay">
+    <div class="popup-content">
+      <h2>Take a peek!</h2>
+      <button id="continue-button">Enter</button>
     </div>
-    
-    <section class="gallery">
-      <div class="grid">
-    
-        <div class="image-container">
-            <img src="/gallery/2025/GAL (5).JPG" alt="GAL (5).JPG" class="gallery-item">
-            <div class="caption">quick pose!</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL (4).JPG" alt="GAL (4).JPG" class="gallery-item">
-            <div class="caption">givin it to them</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL (2).PNG" alt="GAL (2).PNG" class="gallery-item">
-            <div class="caption">first day of school fit check!</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL_(6).jpg" alt="GAL_(6).jpg" class="gallery-item">
-            <div class="caption">light-up mirror = essential!</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL (10).jpeg" alt="GAL (10).jpeg" class="gallery-item">
-            <div class="caption">bsa paint night!</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL_(7).jpg" alt="GAL_7.jpg" class="gallery-item">
-            <div class="caption">gettin ready for athens comp!</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL (3).jpeg" alt="GAL (3).jpeg" class="gallery-item">
-            <div class="caption">post mock mehndi photoshoot</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL (5).jpeg" alt="GAL (5).ipeg" class="gallery-item">
-            <div class="caption">trust fall</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL (6).JPG" alt="GAL (6).JPG" class="gallery-item">
-            <div class="caption">mogged lowkey </div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL (10).JPG" alt="GAL (10).JPG" class="gallery-item">
-            <div class="caption">hottest winterguard photo ever</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL (4).jpeg" alt="GAL (4).jpeg" class="gallery-item">
-            <div class="caption">looking like an absolute angel</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL_(10).jpg" alt="GAL_(10).jpg" class="gallery-item">
-            <div class="caption">longboarding around town and ended up here</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL.jpeg" alt="GAL.jpeg" class="gallery-item">
-            <div class="caption">mogged </div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2025/GAL (7).JPG" alt="GAL (7).JPG" class="gallery-item">
-            <div class="caption">GAL (7).JPG</div>
-        </div>
+  </div>
 
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (8).JPG" alt="GAL (8).JPG" class="gallery-item">
-            <div class="caption">GAL (8).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (14).JPG" alt="GAL (14).JPG" class="gallery-item">
-            <div class="caption">GAL (14).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (5).JPG" alt="GAL (5).JPG" class="gallery-item">
-            <div class="caption">GAL (5).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (23).JPG" alt="GAL (23).JPG" class="gallery-item">
-            <div class="caption">GAL (23).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (16).JPG" alt="GAL (16).JPG" class="gallery-item">
-            <div class="caption">GAL (16).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (3).JPG" alt="GAL (3).JPG" class="gallery-item">
-            <div class="caption">GAL (3).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (20).JPG" alt="GAL (20).JPG" class="gallery-item">
-            <div class="caption">GAL (20).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (9).JPG" alt="GAL (9).JPG" class="gallery-item">
-            <div class="caption">GAL (9).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (19).JPG" alt="GAL (19).JPG" class="gallery-item">
-            <div class="caption">GAL (19).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (24).JPG" alt="GAL (24).JPG" class="gallery-item">
-            <div class="caption">GAL (24).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (27).JPG" alt="GAL (27).JPG" class="gallery-item">
-            <div class="caption">GAL (27).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (28).JPG" alt="GAL (28).JPG" class="gallery-item">
-            <div class="caption">GAL (28).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (17).JPG" alt="GAL (17).JPG" class="gallery-item">
-            <div class="caption">GAL (17).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (6).JPG" alt="GAL (6).JPG" class="gallery-item">
-            <div class="caption">GAL (6).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (26).JPG" alt="GAL (26).JPG" class="gallery-item">
-            <div class="caption">GAL (26).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (4).JPG" alt="GAL (4).JPG" class="gallery-item">
-            <div class="caption">GAL (4).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (11).JPG" alt="GAL (11).JPG" class="gallery-item">
-            <div class="caption">GAL (11).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (1).JPG" alt="GAL (1).JPG" class="gallery-item">
-            <div class="caption">GAL (1).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (15).JPG" alt="GAL (15).JPG" class="gallery-item">
-            <div class="caption">GAL (15).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (22).JPG" alt="GAL (22).JPG" class="gallery-item">
-            <div class="caption">GAL (22).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (12).JPG" alt="GAL (12).JPG" class="gallery-item">
-            <div class="caption">GAL (12).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (18).JPG" alt="GAL (18).JPG" class="gallery-item">
-            <div class="caption">GAL (18).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (25).JPG" alt="GAL (25).JPG" class="gallery-item">
-            <div class="caption">GAL (25).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (10).JPG" alt="GAL (10).JPG" class="gallery-item">
-            <div class="caption">GAL (10).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (21).JPG" alt="GAL (21).JPG" class="gallery-item">
-            <div class="caption">GAL (21).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (13).JPG" alt="GAL (13).JPG" class="gallery-item">
-            <div class="caption">GAL (13).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (7).JPG" alt="GAL (7).JPG" class="gallery-item">
-            <div class="caption">GAL (7).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (2).JPG" alt="GAL (2).JPG" class="gallery-item">
-            <div class="caption">GAL (2).JPG</div>
-        </div>
-        
-        <div class="image-container">
-            <img src="/gallery/2024/GAL (29).JPG" alt="GAL (29).JPG" class="gallery-item">
-            <div class="caption">GAL (29).JPG</div>
-        </div>        
-        
-    </section>
+  <div class="gallery">
+    <div class="grid" id="gallery"></div>
+  </div>
 
-    <div id="lightbox">
-      <span class="close">&times;</span>
-      <img id="lightbox-img">
-    </div>
+  <script>
+    const images = []
+for (let i = 1; i <= 45; i++) {
+  images.push(i + ".JPG");
+}
 
-    <footer>
-        <p>The Sarah Era ♡</p>
-    </footer>
+    const galleryDiv = document.getElementById('gallery');
 
-    <script src="gallery.js"></script>
-  </body>
+    // Load images into gallery
+    images.forEach(filename => {
+      const galleryItem = document.createElement('div');
+      galleryItem.className = 'gallery-item';
+
+      const imageContainer = document.createElement('div');
+      imageContainer.className = 'image-container';
+
+      const img = document.createElement('img');
+      img.src = `/gallery/${filename}`;
+      img.alt = filename;
+
+      imageContainer.appendChild(img);
+      galleryItem.appendChild(imageContainer);
+      galleryDiv.appendChild(galleryItem);
+    });
+
+    // Popup and gallery reveal logic
+    const popupOverlay = document.getElementById('popup-overlay');
+    const gallery = document.querySelector('.grid');
+    const continueButton = document.getElementById('continue-button');
+
+continueButton.addEventListener('click', () => {
+  // Remove dimming from each image-container to make images fully bright
+document.querySelectorAll('.image-container').forEach(container => {
+  container.classList.add('bright');
+});
+
+
+  // Fade out popup overlay
+  popupOverlay.style.opacity = '0';
+
+  setTimeout(() => {
+    popupOverlay.style.display = 'none';
+    gallery.style.visibility = 'visible';
+    gallery.style.opacity = '1';
+  }, 1000);
+});
+
+
+
+  </script>
+
+</body>
 </html>
