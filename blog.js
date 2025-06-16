@@ -72,18 +72,27 @@ const blogPosts = [
     date: "June 8, 2025",
     topic: "SELF-DEVELOPEMENT"
   },
-  { title: "Transcendence is found in the ordinary.",
+  { 
+    title: "Transcendence is found in the ordinary.",
     content: "Travelling to other countries to &quot;find yourself&quot; is a cope.",
     link: "posts/transcend.html",
     image:"/images/transcend.PNG",
     date: "June 10, 2025",
     topic: "SELF-DEVELOPEMENT"
+  },
+  {
+    title: "The choice is yours.",
+    content: "A devotional to my future self — a reminder that every decision creates the woman I’m becoming.",
+    link: "posts/choice.html",
+    image: "/images/choice.JPG",
+    date: "June 16, 2025",
+    topic: "SELF-DEVELOPMENT"
   }
   
 ];
 
 // Settings for pagination
-const postsPerPage = 10; 
+const postsPerPage = 100; 
 let currentPage = 1;
 let selectedTopic = null; // Track the selected topic
 

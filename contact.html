@@ -23,7 +23,64 @@
       <a href="gallery.html">GALLERY</a>
       <a href="/contact.html">CONTACT</a>
     </nav>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+  
+  /* Contact section layout with flexbox */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
 
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 45%;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.contact-container {
+    flex-basis: 45%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fdf8fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 2px;;
+}
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+</style>
     <!-- Contact Section (flex container) -->
     <div class="contact-section">
       <!-- Left Side: Images -->
@@ -34,15 +91,7 @@
       <!-- Right Side: Contact Form -->
       <div class="contact-container">
         <h2>I'd love to hear from you!</h2>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScIoY8JchvdWgjgpowX7LkZ-YTcpK-rvyCsP68IrxgaqIvVLA/viewform?embedded=true"
-          width="640"
-          height="509"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…
-        </iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN_fUvKwanXEHKXYdWTBZrXxL56xejPvuGlo8GGpJW1YYEig/viewform?embedded=true" width="640" height="505" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     </div>
 
@@ -52,3 +101,4 @@
     <script src="contact.js"></script>
   </body>
 </html>
+
