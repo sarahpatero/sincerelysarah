@@ -87,6 +87,14 @@ const blogPosts = [
     image: "/images/choice.JPG",
     date: "June 16, 2025",
     topic: "SELF-DEVELOPMENT"
+  },
+  {
+    title: "How to use your introductory psychology class to build a better you.",
+    content: "PSYCH 111 to back crazy self-development antics.",
+    link: "psych.html",
+    image: "/images/psych.JPG",
+    date: "June 18, 2025",
+    topic: "SELF-DEVELOPMENT"
   }
   
 ];
