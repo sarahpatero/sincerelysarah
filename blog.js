@@ -1,8 +1,8 @@
 // Blog posts data
 const blogPosts = [
   {
-    title: "Sarah, contemplate why you are so happy.",
-    content: "Started as a habit, ended as an identity.",
+    title: "Contemplating why I'm so happy.",
+    content: "4,000-word manifesto.",
     link: "posts/contemplate.html",
     image: "/images/flag-dinner.jpg",
     date: "November 30, 2024",
@@ -69,129 +69,276 @@ const blogPosts = [
     content: "Beauty + Coherence + Receptivity.",
     link: "posts/prettyaura.html",
     image:"/images/aurasquare.jpg",
-    date: "June 8, 2025",
+    date: "June 16, 2025", //Actually published on June 8
     topic: "SELF-DEVELOPEMENT"
   },
   { 
-    title: "Transcendence is found in the ordinary.",
-    content: "Travelling to other countries to &quot;find yourself&quot; is a cope.",
+    title: "Transcendence is also found in the ordinary.",
+    content: "Can be felt in a crater in Iceland, or at your childhood park.",
     link: "posts/transcend.html",
     image:"/images/transcend.PNG",
-    date: "June 10, 2025",
+    date: "June 30, 2025", //Actually published on June 10
     topic: "SELF-DEVELOPEMENT"
   },
   {
-    title: "The choice is yours.",
-    content: "A devotional to my future self — a reminder that every decision creates the woman I’m becoming.",
+    title: "To the woman who chose me.",
+    content: "Thanks for sticking around, Sarah.",
     link: "posts/choice.html",
-    image: "/images/choice.JPG",
-    date: "June 16, 2025",
+    image: "/gallery/79.JPG",
+    date: "July 22, 2025", //Actually published on June 16
     topic: "SELF-DEVELOPMENT"
-  },
+  }, /*
   {
-    title: "How to use your introductory psychology class to build a better you.",
-    content: "PSYCH 111 to back crazy self-development antics.",
-    link: "psych.html",
+    title: "Applications of introductory psychology.",
+    content: "Using PSYCH 111 to back my self-development antics.",
+    link: "posts/psych.html",
     image: "/images/psych.JPG",
     date: "June 18, 2025",
     topic: "SELF-DEVELOPMENT"
-  }
+  }, */
+    {
+    title: "Entering the post-Switzerland era of my life.",
+    content: "Never the same.",
+    link: "posts/swiss.html",
+    image: "/images/switz.jpg",
+    date: "August 18, 2025",
+    topic: "SELF-DEVELOPMENT"
+  }, /*
+  {
+  title: "Natural curiousity, an insatiable hunger to learn, and an even stronger courage to fail.",
+  content: "Triad to success.",
+  link: "posts/curiosity.html",
+  image: "/gallery/61.JPG",
+  date: "December 4, 2025",
+  topic: "SELF-DEVELOPMENT"
+  }, */
+    {
+  title: "Commit to absolute integrity.",
+  content: "There is always someone watching you.",
+  link: "posts/integrity.html",
+  image: "/gallery/64.JPG",
+  date: "November 10, 2025", // Actually came up with the idea on December 4 lol
+  topic: "SELF-DEVELOPMENT"
+  }, /*
+  {
+  title: "Go ALL IN on yourself.",
+  content: "Hyperfocus on you.",
+  link: "posts/allin.html",
+  image: "/gallery/153.JPG",
+  date: "December 4, 2025",
+  topic: "SELF-DEVELOPMENT"
+  }, */
+  {
+  title: "Never forget who you are.",
+  content: "And never change for ANYTHING.",
+  link: "posts/neverforget.html",
+  image: "/images/neverforget.jpg", 
+  date: "October 20, 2025", // Actually came up with the idea on December 4 lol
+  topic: "SELF-DEVELOPMENT"
+  },
+    {
+  title: "Until death, defeat is psychological.",
+  content: "Unstoppable under every circumstance.",
+  link: "posts/death.html",
+  image: "/images/canthurtme.jpg",
+  date: "October 7, 2025", // Actually came up with the idea on December 4 lol
+  topic: "SELF-DEVELOPMENT"
+  }, /*
+  {
+  title: "Get out of your own way.",
+  content: "The mountain is you.",
+  link: "posts/way.html",
+  image: "/images/buffsarah.jpg",
+  date: "December 4, 2025",
+  topic: "SELF-DEVELOPMENT"
+  }, */
+  {
+  title: "You can turn your life around.",
+  content: "The only way to go is up.",
+  link: "posts/around.html",
+  image: "/images/abayasarah.jpg",
+  date: "September 4, 2025", // Actually came up with the idea on December 4 lol
+  topic: "SELF-DEVELOPMENT"
+  },
+  {
+  title: "God is always testing you to see how badly you want it.",
+  content: "Can you really handle what you are wishing for?",
+  link: "posts/test.html",
+  image: "/images/sunsetimage.PNG",
+  date: "November 24, 2025", // Actually came up with the idea on December 5 lol
+  topic: "SELF-DEVELOPMENT"
+  },
+  /* {
+  title: "Attention span recovery in the digital age.",
+  content: "Relearning how to be present, intentional, and deeply alive. ",
+  link: "posts/attention.html",
+  image: "/gallery/106.JPG",
+  date: "December 5, 2025",
+  topic: "SELF-DEVELOPMENT"
+  }, 
+  {
+  title: "I think I've lost the plot.",
+  content: "Extreme crashout disguised as a candidly raw and honest post.",
+  link: "posts/plot.html",
+  image: "/gallery/36.JPG",
+  date: "December 5, 2025",
+  topic: "SELF-DEVELOPMENT"
+  },
+  {
+  title: "Who even am I.",
+  content: "Me when the existential dread hits just right.",
+  link: "posts/who.html",
+  image: "/gallery/95.JPG",
+  date: "December 5, 2025",
+  topic: "SELF-DEVELOPMENT"
+  }, */
+  {
+  title: "When was the last time you surprised yourself with your own growth?",
+  content: "MATH 217.",
+  link: "posts/math217.html",
+  image: "/images/math217.JPG",
+  date: "December 9, 2025",
+  topic: "SELF-DEVELOPMENT"
+  },
+  
   
 ];
 
-// Settings for pagination
-const postsPerPage = 100; 
+// SETTINGS
+const postsPerPage = 100;
 let currentPage = 1;
-let selectedTopic = null; // Track the selected topic
+let selectedTopic = null;
+let sortOrder = "newest"; // newest or oldest
 
-// Function to render posts on the current page and selected topic
+// SORTING FUNCTION
+function getSortedPosts(posts) {
+  return posts.slice().sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+
+    return sortOrder === "newest"
+      ? dateB - dateA   // newest → oldest
+      : dateA - dateB;  // oldest → newest
+  });
+}
+
+// MAIN RENDER FUNCTION
 function renderPosts() {
   const container = document.getElementById("blog-container");
-  container.innerHTML = ""; // Clear previous posts
+  container.innerHTML = "";
 
-  // Filter posts by the selected topic
-  let filteredPosts = selectedTopic && selectedTopic !== 'ALL'
-      ? blogPosts.filter(post => post.topic === selectedTopic)
+  // 1. FILTER BY TOPIC
+  let filteredPosts =
+    selectedTopic && selectedTopic !== "ALL"
+      ? blogPosts.filter((post) => post.topic === selectedTopic)
       : blogPosts;
 
-  // Determine the slice of posts to display for the current page if pagination is active
+  // 2. SORT POSTS BASED ON sortOrder
+  filteredPosts = getSortedPosts(filteredPosts);
+
+  // 3. PAGINATE
   const start = (currentPage - 1) * postsPerPage;
   const end = start + postsPerPage;
   const postsToDisplay = filteredPosts.slice(start, end);
 
-  // Generate HTML for each post
-  postsToDisplay.forEach(post => {
-      container.innerHTML += `
-          <article class="blog-post">
-              <div class="blog-post-image">
-                  <img src="${post.image}" alt="${post.title}" />
-              </div>
-              <div class="blog-post-content">
-                  <h2 class="blog-post-title">
-                      <a href="${post.link}">${post.title}</a>
-                  </h2>
-                  <p class="blog-post-description">${post.content}</p>
-                  <p class="blog-post-date">
-                      Published on: <span>${post.date}</span>
-                  </p>
-              </div>
-          </article>
-      `;
+  // 4. RENDER POSTS
+  postsToDisplay.forEach((post) => {
+    container.innerHTML += `
+      <article class="blog-post">
+        <div class="blog-post-image">
+          <img src="${post.image}" alt="${post.title}" />
+        </div>
+        <div class="blog-post-content">
+          <h2 class="blog-post-title">
+            <a href="${post.link}">${post.title}</a>
+          </h2>
+          <p class="blog-post-description">${post.content}</p>
+          <p class="blog-post-date">Published on: <span>${post.date}</span></p>
+        </div>
+      </article>
+    `;
   });
 
-  // Render pagination only if we need to paginate
+  // 5. SHOW PAGINATION IF NEEDED
   if (filteredPosts.length > postsPerPage) {
     renderPagination(filteredPosts.length);
   } else {
-    // If no pagination is needed, clear pagination controls
     document.getElementById("pagination").innerHTML = "";
   }
 }
 
-// Function to filter posts by topic
+// TOPIC FILTER
 function filterByTopic(topic) {
-  selectedTopic = topic; // Set selected topic for pagination
-  currentPage = 1; // Reset to first page when a new topic is selected
-  renderPosts(); // Re-render posts with the selected topic or all posts
+  selectedTopic = topic;
+  currentPage = 1;
+  renderPosts();
 }
 
-// Function to render pagination controls
+// SORT BUTTON HANDLER
+function setSortOrder(order) {
+  sortOrder = order;
+  currentPage = 1;
+  renderPosts();
+}
+
+// PAGINATION RENDERING
 function renderPagination(totalPosts) {
   const pagination = document.getElementById("pagination");
   const totalPages = Math.ceil(totalPosts / postsPerPage);
-  pagination.innerHTML = ""; // Clear previous pagination
 
-  // Add "Previous" button
+  pagination.innerHTML = "";
+
   if (currentPage > 1) {
     pagination.innerHTML += `<button onclick="changePage(-1)">Previous</button>`;
   }
 
-  // Add page numbers
   for (let i = 1; i <= totalPages; i++) {
     pagination.innerHTML += `
-      <button class="${i === currentPage ? 'active' : ''}" onclick="goToPage(${i})">${i}</button>
+      <button class="${i === currentPage ? "active" : ""}" onclick="goToPage(${i})">
+        ${i}
+      </button>
     `;
   }
 
-  // Add "Next" button
   if (currentPage < totalPages) {
     pagination.innerHTML += `<button onclick="changePage(1)">Next</button>`;
   }
 }
 
-// Function to handle page change (previous/next)
+// PAGE NAVIGATION
 function changePage(direction) {
   currentPage += direction;
-  renderPosts(); // Re-render posts with the updated page
+  renderPosts();
 }
 
-// Function to go to a specific page
 function goToPage(page) {
   currentPage = page;
-  renderPosts(); // Re-render posts with the selected page
+  renderPosts();
 }
 
-// Call renderPosts to show all posts by default
+// INITIAL RENDER
 document.addEventListener("DOMContentLoaded", () => {
   renderPosts();
 });
+function changeSort(order) {
+  sortOrder = order;
+  currentPage = 1;
+
+  // Update active button
+  document.querySelectorAll('.sort-option').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  document.querySelector(`.sort-option[onclick="changeSort('${order}')"]`)
+    .classList.add('active');
+
+  const container = document.getElementById("blog-container");
+
+  // Fade out
+  container.classList.add("fade-out");
+
+  // Wait, then load new posts + fade in
+  setTimeout(() => {
+    renderPosts();
+    container.classList.remove("fade-out");
+  }, 400);
+}

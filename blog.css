@@ -182,3 +182,40 @@ footer {
 #pagination button.prev:hover, #pagination button.next:hover {
   background-color: #F6C6D7;  /* Darker blue on hover */
 }
+/* Sort Controls (Newest / Oldest Buttons) */
+#sort-controls {
+  display: flex;
+  gap: 12px;
+  margin-top:10px;
+  margin-bottom:20px;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.sort-option {
+  font-family: 'Lora', serif;
+    font-weight: bold;
+
+  background: none;        /* remove box */
+  border: none;            /* remove box */
+  padding: 0;              /* remove box padding */
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;             /* default text color */
+  transition: color 0.2s ease;
+}
+
+.sort-option:hover {
+  color: #F6C6D7;
+  background: none !important;  /* IMPORTANT: stops box from appearing */
+
+}
+#blog-container {
+  opacity: 1;
+  transition: opacity 0.4s ease;   /* smooth fade */
+}
+
+#blog-container.fade-out {
+  opacity: 0;
+}
+

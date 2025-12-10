@@ -32,7 +32,8 @@
 
 /* Parallax Containers (Base Styles) */
 .parallax-container-1,
-.parallax-container-2 {
+.parallax-container-2,
+.parallax-container-3 {
     position: relative;
     width: 100%;
     height: 400px; /* Default height for larger screens */
@@ -50,8 +51,12 @@
 }
 
 .parallax-container-2 {
-    background-image: url('images/aboutme.jpg');
+    background-image: url('images/baddie.jpg');
 }
+.parallax-container-3 {
+    background-image: url('images/switz.jpg');
+}
+
 
 /* Overlay Text Styling */
 .overlay-text {
@@ -65,6 +70,36 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center; /* Center text alignment */
 }
+h3 {
+margin-left: 10px;
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.interest-grid span {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #fff5f8;
+  border: 1px solid #f2d4df;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.interest-grid span:hover {
+  transform: translateY(-3px);
+}
+
 
 /* Media Query for Tablets and Smaller Screens */
 @media screen and (max-width: 1024px) {
@@ -127,29 +162,53 @@
         <div class="overlay-text">Welcome to my era.</div>
       </div>
       <div class="Welcome">
-        <p>
-          Welcome. This website captures an ongoing spill of my guts.
-        </p>
-        <br>
-      <p>
-        It's a fresh space for my unfiltered musings - a vault of memories, reflections, rambles, and knowledge, unfolding chapter by chapter. 
-      </p>
+      <p>My notes app was getting quite full. So, this blog was born.</p>
       <br>
-      <p>Lose yourself in it. Wander freely.</p>
+      <p>Behold: a fresh and polished space for me to talk all I want! (I think my sister was getting sick of my endless FaceTime calls). </p>
+      <br>
+      <p>I promise, there is something, somewhere here for you. Trust that you finding my corner of the internet is part of some divine ordinance.</p>
     </div>
     <div class="container">
         <div class="parallax-container-2">
           <div class="overlay-text">About me</div>
         </div>
         <div class="Welcome">
-        <p>My name is Sarah and I started the blog "The Sarah Era" as an outlet for me to explore my thoughts, share my passions, and document my life in an aunthentic way. 
-           With running a blog being a long-time dream of mine, I'm finally happy to claim a little corner of the internet to myself.
-        </p>
+        <p>My name is Sarah, Sarita if I'm feeling spicy. </p>
         <br>
-        <p>
-            I am from the state of Michigan and I am a college student studying studying mathematics, economics, and psychology. I have a beautiful family with two loving parents and five sisters. 
-        </p>
+<h3 class="ind">I am a fan of:</h3>
+<div class="interest-grid">
+  <span>The color red</span>
+  <span>Unprompted deep conversations</span>
+  <span>Pullups, pushups, and the StairMaster</span>
+  <span>Nature walks</span>
+  <span>Evolutionary psychology</span>
+  <span>Open-minded and enthusiastic people</span>
+  <span>Loose-leaf tea</span>
+  <span>Linear algebra</span>
+  <span>Natural-fiber clothing</span>
+  <span>Talking to strangers</span>
+  <span>Conscious breathing</span>
+  <span>Loremaxxing and looksmaxxing</span>
+  <span>Embodied gratitude</span>
+  <span>Daddy Yankee</span>
+  <span>Taking notes on paper</span>
+  <span>Guessing ethnicities</span>
+</div>
+
+      <p>If any of my favorite things are also your favorite things, how about you stick around? :)</p>
     </div>
+     <div class="parallax-container-3">
+        <div class="overlay-text">Let's be friends? </div>
+      </div>
+      <div class="Welcome">
+        <p>I appreciate you and I would love to get to know you more.</p>
+        <br>
+        <p>Please don't hesitate to reach out at thesarahera@gmail.com. </p>
+        <br>
+        <p>I did say that I am a fan of talking to strangers, but if you've read this far, I'm going to assume that we are besties! </p>
+        <br>
+        <p> Welcome home, bestie!! </p>
+      </div>
     <footer>
       <p>The Sarah Era ♡</p>
     </footer>
