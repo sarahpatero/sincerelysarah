@@ -200,6 +200,15 @@ const blogPosts = [
   date: "December 9, 2025",
   topic: "SELF-DEVELOPMENT"
   },
+  {
+  title: "The beauty of not being good yet.",
+  content: "The point of it all is who you become in the process.",
+  link: "posts/thepoint.html",
+  image: "/gallery/97.JPG",
+  date: "December 14, 2025",
+  topic: "SELF-DEVELOPMENT"
+  },
+
   
   
 ];
