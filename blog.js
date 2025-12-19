@@ -208,6 +208,18 @@ const blogPosts = [
   date: "December 14, 2025",
   topic: "SELF-DEVELOPMENT"
   },
+  /*
+  {
+  title: "How you see life is how it is"}
+  */
+ {
+  title: "I only ate beans and rice everyday for a year straight.",
+  content: "I permanently rewired my brain towards immense gratitude.",
+  link: "posts/beans.html",
+  image: "/gallery/30.JPG",
+  date: "December 15, 2025",
+  topic: "SELF-DEVELOPMENT"
+ }
 
   
   
