@@ -219,6 +219,14 @@ const blogPosts = [
   image: "/gallery/30.JPG",
   date: "December 15, 2025",
   topic: "SELF-DEVELOPMENT"
+ },
+ {
+  title: "Softcore routines breed hardcore discipline.",
+  content: "All you need is a simple routine centered around your wellness, and discpline will naturally follow.",
+  link: "posts/softcore.html",
+  image: "/gallery/42.JPG",
+  date: "December 19, 2025",
+  topic: "SELF-DEVELOPMENT"
  }
 
   
