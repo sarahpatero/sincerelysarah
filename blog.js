@@ -116,7 +116,7 @@ const blogPosts = [
   title: "Commit to absolute integrity.",
   content: "There is always someone watching you.",
   link: "posts/integrity.html",
-  image: "/gallery/64.JPG",
+  image: "/gallery/16.JPG",
   date: "November 10, 2025", // Actually came up with the idea on December 4 lol
   topic: "SELF-DEVELOPMENT"
   }, /*
@@ -204,7 +204,7 @@ const blogPosts = [
   title: "The beauty of not being good yet.",
   content: "The point of it all is who you become in the process.",
   link: "posts/thepoint.html",
-  image: "/gallery/97.JPG",
+  image: "/gallery/106.JPG",
   date: "December 14, 2025",
   topic: "SELF-DEVELOPMENT"
   },
@@ -216,7 +216,7 @@ const blogPosts = [
   title: "I only ate beans and rice everyday for a year straight.",
   content: "I permanently rewired my brain towards immense gratitude.",
   link: "posts/beans.html",
-  image: "/gallery/30.JPG",
+  image: "/gallery/90.JPG",
   date: "December 15, 2025",
   topic: "SELF-DEVELOPMENT"
  },
@@ -224,10 +224,18 @@ const blogPosts = [
   title: "Softcore routines breed hardcore discipline.",
   content: "All you need is a simple routine centered around your wellness, and discpline will naturally follow.",
   link: "posts/softcore.html",
-  image: "/gallery/42.JPG",
+  image: "/gallery/11.JPG",
   date: "December 19, 2025",
   topic: "SELF-DEVELOPMENT"
- }
+ }, /*
+ {
+  title: "Why is novelty the spice of life?",
+  content: "What is it about novel experiences that make us so happy?",
+  link: "posts/novelty.html",
+  image: "/gallery/43.JPG",
+  date: "December 22, 2025",
+  topic: "SELF-DEVELOPMENT"
+ } */
 
   
   
