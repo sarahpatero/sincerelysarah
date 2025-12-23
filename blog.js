@@ -244,9 +244,6 @@ const blogPosts = [
   date: "December 23, 2025",
   topic: "SELF-DEVELOPMENT"
 },
-{
-  title: "BRING BACK UNCANNY INDIVIDUALITY".
-}
 ];
 
 // SETTINGS
