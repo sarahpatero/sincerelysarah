@@ -236,9 +236,17 @@ const blogPosts = [
   date: "December 22, 2025",
   topic: "SELF-DEVELOPMENT"
  } */
-
-  
-  
+{
+  title: "In the midst of it all, always remember your purpose.",
+  content: "When days just feel like passing time, come back to what gives you true meaning.",
+  link: "posts/midst.html",
+  image: "/gallery/72.JPG",
+  date: "December 23, 2025",
+  topic: "SELF-DEVELOPMENT"
+},
+{
+  title: "BRING BACK UNCANNY INDIVIDUALITY".
+}
 ];
 
 // SETTINGS
