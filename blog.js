@@ -211,7 +211,7 @@ const blogPosts = [
   /*
   {
   title: "How you see life is how it is"}
-  */
+  
  {
   title: "I only ate beans and rice everyday for a year straight.",
   content: "I permanently rewired my brain towards immense gratitude.",
@@ -219,7 +219,7 @@ const blogPosts = [
   image: "/gallery/90.JPG",
   date: "December 15, 2025",
   topic: "SELF-DEVELOPMENT"
- },
+ }, */
  {
   title: "Softcore routines breed hardcore discipline.",
   content: "All you need is a simple routine centered around your wellness, and discpline will naturally follow.",
@@ -244,6 +244,33 @@ const blogPosts = [
   date: "December 23, 2025",
   topic: "SELF-DEVELOPMENT"
 },
+{
+  title: "I am deathly afraid of wasted potential.",
+  content: "There is no other choice but to attack life with a fierce intensity.",
+  link: "posts/intensity.html",
+  image: "/gallery/85.JPG",
+  date: "December 29, 2025",
+  topic: "SELF-DEVELOPMENT"
+}, /*
+{
+  title: "Nothing matters.",
+  content: "Nothing matters, so why are you limiting yourself?",
+  link: "posts/matters.html",
+  image: "/gallery/48.JPG",
+  date: "December 25, 2025",
+  topic: "SELF-DEVELOPMENT"
+}, */
+
+{
+  title: "A semester of momentum sprinkled with citrus.",
+  content: "Orlando was the perfect closing chpater.",
+  link: "posts/orlando.html",
+  image: "/images/pointe.jpg",
+  date: "January 11, 2026",
+  topic: "SELF-DEVELOPMENT"
+
+}
+
 ];
 
 // SETTINGS
