@@ -263,13 +263,37 @@ const blogPosts = [
 
 {
   title: "A semester of momentum sprinkled with citrus.",
-  content: "Orlando was the perfect closing chpater.",
+  content: "Orlando was the perfect closing chapter.",
   link: "posts/orlando.html",
   image: "/images/pointe.jpg",
   date: "January 11, 2026",
   topic: "SELF-DEVELOPMENT"
+},
+{
+  title: "Ako ay pinagpala, salamat sa Diyos.",
+  content: "The grandmother of folk tinik.",
+  link: "posts/ako.html",
+  image: "/images/ako.JPG",
+  date: "January 27, 2026",
+  topic: "SELF-DEVELOPMENT"
+},
+{
+  title: "I passed Exam P!",
+  content: "Cheers to many, many, many more.",
+  link: "posts/examp.html",
+  image: "/images/examp.jpg",
+  date: "January 29, 2026",
+  topic: "SELF-DEVELOPMENT"
+},
+{
+  title: "Giving to those who can't give back.",
+  content: "Who God infinitely blesses.",
+  link: "posts/lauren.html",
+  image: "/images/lauren.jpg",
+  date: "January 30, 2026",
+  topic: "SELF-DEVELOPMENT"
+},
 
-}
 
 ];
 
