@@ -160,6 +160,7 @@ const blogPosts = [
   date: "September 4, 2025", // Actually came up with the idea on December 4 lol
   topic: "SELF-DEVELOPMENT"
   },
+  /*
   {
   title: "God is always testing you to see how badly you want it.",
   content: "Can you really handle what you are wishing for?",
@@ -168,7 +169,7 @@ const blogPosts = [
   date: "November 24, 2025", // Actually came up with the idea on December 5 lol
   topic: "SELF-DEVELOPMENT"
   },
-  /* {
+  {
   title: "Attention span recovery in the digital age.",
   content: "Relearning how to be present, intentional, and deeply alive. ",
   link: "posts/attention.html",
@@ -293,7 +294,40 @@ const blogPosts = [
   date: "January 30, 2026",
   topic: "SELF-DEVELOPMENT"
 },
-
+{
+  title: "Hot and unbothered.",
+  content: "Maintaining physical beauty + unfazed by external circumstances.",
+  link: "posts/unbothered.html",
+  image: "/images/unbothered.jpg",
+  date: "February 13, 2026",
+  topic: "SELF-DEVELOPMENT"
+},
+/*
+{
+  title: "Never leave anything in your life unappreciated.",
+  content: "Maintaining physical beauty + unfazed by external circumstances.",
+  link: "posts/unbothered.html",
+  image: "/images/unbothered.jpg",
+  date: "February 13, 2026",
+  topic: "SELF-DEVELOPMENT"
+},
+{
+  title: "I'm doing this being I love you, future-Sarah",
+  content: "Maintaining physical beauty + unfazed by external circumstances.",
+  link: "posts/unbothered.html",
+  image: "/images/unbothered.jpg",
+  date: "February 13, 2026",
+  topic: "SELF-DEVELOPMENT"
+},
+*/
+{
+  title: "Parasympathetic-maxxing",
+  content: "Going ALL IN on nervous system regulation.",
+  link: "posts/nervoussystem.html",
+  image: "/images/nervoussystem.JPG",
+  date: "February 22, 2026",
+  topic: "SELF-DEVELOPMENT"
+},
 
 ];
 

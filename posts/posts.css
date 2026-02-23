@@ -138,6 +138,9 @@ nav a:hover {
     align-items: center;
     border-radius: 10px;
   }
+  ul {
+  padding-left: 40px; /* Adjust the value as needed */
+}
 
   /* For desktop and larger screens */
 .blog-post {
