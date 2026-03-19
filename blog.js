@@ -246,7 +246,7 @@ const blogPosts = [
   topic: "SELF-DEVELOPMENT"
 },
 {
-  title: "I am deathly afraid of wasted potential.",
+  title: "Wasted potential is my only fear in life.",
   content: "There is no other choice but to attack life with a fierce intensity.",
   link: "posts/intensity.html",
   image: "/gallery/85.JPG",
@@ -305,14 +305,14 @@ const blogPosts = [
 /*
 {
   title: "Never leave anything in your life unappreciated.",
-  content: "Maintaining physical beauty + unfazed by external circumstances.",
+  content: "",
   link: "posts/unbothered.html",
   image: "/images/unbothered.jpg",
   date: "February 13, 2026",
   topic: "SELF-DEVELOPMENT"
 },
 {
-  title: "I'm doing this being I love you, future-Sarah",
+  title: "I'm doing this because I love you, future-Sarah",
   content: "Maintaining physical beauty + unfazed by external circumstances.",
   link: "posts/unbothered.html",
   image: "/images/unbothered.jpg",
@@ -328,7 +328,14 @@ const blogPosts = [
   date: "February 22, 2026",
   topic: "SELF-DEVELOPMENT"
 },
-
+{
+  title: "Resilience is the backbone behind an effortlessly happy disposition.",
+  content: "What is one thing that makes you who you are?",
+  link: "posts/resilience.html",
+  image: "/gallery/99.JPG",
+  date: "March 9, 2026",
+  topic: "SELF-DEVELOPMENT"
+},
 ];
 
 // SETTINGS
