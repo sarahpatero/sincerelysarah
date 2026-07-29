@@ -1,218 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Sarah Era: Home</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="images/rose.png" >
-    <link rel="preload" href="images/prom3.jpg" as="image">
-<link rel="preload" href="images/aboutme.jpg" as="image">
-  </head>
-  <body>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
-/* Home Page Main Container */
-.homepage-container {
-    max-width: 800px; /* Set the max width to 800px, or adjust as needed */
-    margin: 0px auto; /* Center the container */
-    padding: 0px;
-    background: #fdf8fa; /* Same background color as the blog posts */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-    width: 50%; /* Set the container width to 50% of the screen */
-    overflow: hidden;
-}
-
-/* Parallax Containers (Base Styles) */
-.parallax-container-1,
-.parallax-container-2,
-.parallax-container-3 {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Default height for larger screens */
-    margin: 0 auto;
-    background-size: cover; /* Ensures image covers the container */
-    background-position: center center; /* Keeps images centered */
-    background-repeat: no-repeat;
-    transition: background-position 0.3s ease-out, height 0.3s ease-out; /* Smooth transitions */
-    background-attachment: fixed;
-    min-height: clamp(240px, 50vh, 420px);
-}
-
-/* Specific Background Images */
-.parallax-container-1 {
-    background-image: url('images/prom3.jpg');
-}
-
-.parallax-container-2 {
-    background-image: url('images/baddie.jpg');
-}
-.parallax-container-3 {
-    background-image: url('images/switz.jpg');
-}
-
-
-/* Overlay Text Styling */
-.overlay-text {
-    position: absolute;
-    font-family: 'Great Vibes', cursive;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 40px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center; /* Center text alignment */
-}
-h3 {
-margin-left: 10px;
-}
-
-.interest-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px;
-  margin-top: 10px;
-}
-
-.interest-grid span {
-  margin-left: 10px;
-  margin-right: 10px;
-  background: #fff5f8;
-  border: 1px solid #f2d4df;
-  padding: 10px 14px;
-  border-radius: 12px;
-  font-family: 'Lora', serif;
-  font-weight: bold;
-  font-size: 15px;
-  display: block;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
-}
-
-.interest-grid span:hover {
-  transform: translateY(-3px);
-}
-
-
-/* Media Query for Tablets and Smaller Screens */
-@media screen and (max-width: 1024px) {
-    .homepage-container {
-        width: 80%; /* Adjust width for tablets */
-    }
-
-    .overlay-text {
-        font-size: 30px; /* Reduce font size for better readability */
-    }
-}
-
-/* Media Query for Mobile Devices */
-@media screen and (max-width: 768px) {
-    .homepage-container {
-        width: 95%; /* Take up more space on smaller screens */
-    }
-
-    .overlay-text {
-        font-size: 24px; /* Adjust text size for mobile */
-    }
-}
-    </style>
-    <header>
-      <h1> The Sarah Era    ♡</h1>
-    </header>
-    <nav>
-      <a href="#index.html">HOME</a>
-      <a href="blog.html">BLOG</a>
-      <a href="gallery.html">GALLERY</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
-
-    <script>
-      window.addEventListener('scroll', function() {
-    const scrollPosition = window.scrollY;  // Get the vertical scroll position
-    const parallaxContainer1 = document.querySelector('.parallax-container-1');
-    const parallaxContainer2 = document.querySelector('.parallax-container-2');
-
-    // Parallax effect for .parallax-container-1
-    let newHeight1 = 50 + scrollPosition * 0.05;  // Slower height adjustment for .parallax-container-1
-    newHeight1 = Math.max(30, Math.min(100, newHeight1));  // Set boundaries between 30vh and 100vh
-
-    parallaxContainer1.style.height = newHeight1 + 'vh';
-    let scrollEffect1 = scrollPosition * 0.02;  // Much slower background movement for .parallax-container-1
-    parallaxContainer1.style.backgroundPosition = 'center ' + (50 - scrollEffect1) + '%';
-
-    // Parallax effect for .parallax-container-2 (unchanged)
-    let newHeight2 = 50 + scrollPosition * 0.05;  // Adjusted for slower height change
-    newHeight2 = Math.max(40, Math.min(90, newHeight2));  // Set boundaries between 40vh and 90vh
-
-    parallaxContainer2.style.height = newHeight2 + 'vh';
-    let scrollEffect2 = scrollPosition * 0.03;  // Slower background movement for .parallax-container-2
-    parallaxContainer2.style.backgroundPosition = `center ${(50 - scrollEffect2)}%`;
-});
-
-    </script>
-    <div class="homepage-container">
-      <div class="parallax-container-1">
-        <div class="overlay-text">Welcome to my era.</div>
-      </div>
-      <div class="Welcome">
-      <p>My notes app was getting quite full. So, this blog was born.</p>
-      <br>
-      <p>Behold: a fresh and polished space for me to talk all I want! (I think my sister was getting sick of my endless FaceTime calls). </p>
-      <br>
-      <p>I promise, there is something, somewhere here for you. Trust that you finding my corner of the internet is part of some divine ordinance.</p>
+---
+layout: default
+title: "The Sarah Era: Home"
+stylesheet: /home.css
+---
+<div class="homepage-container">
+  <div class="parallax-container-1">
+    <div class="overlay-text">Welcome to my era.</div>
+  </div>
+  <div class="Welcome">
+    <p>My notes app was getting quite full. So, this blog was born.</p>
+    <br>
+    <p>Behold: a fresh and polished space for me to talk all I want! (I think my sister was getting sick of my endless FaceTime calls). </p>
+    <br>
+    <p>I promise, there is something, somewhere here for you. Trust that you finding my corner of the internet is part of some divine ordinance.</p>
+  </div>
+  <div class="container">
+    <div class="parallax-container-2">
+      <div class="overlay-text">About me</div>
     </div>
-    <div class="container">
-        <div class="parallax-container-2">
-          <div class="overlay-text">About me</div>
-        </div>
-        <div class="Welcome">
-        <p>My name is Sarah, Sarita if I'm feeling spicy. </p>
-        <br>
-<h3 class="ind">I am a fan of:</h3>
-<div class="interest-grid">
-  <span>The color red</span>
-  <span>Unprompted deep conversations</span>
-  <span>Pullups, pushups, and the StairMaster</span>
-  <span>Nature walks</span>
-  <span>Evolutionary psychology</span>
-  <span>Open-minded and enthusiastic people</span>
-  <span>Loose-leaf tea</span>
-  <span>Linear algebra</span>
-  <span>Natural-fiber clothing</span>
-  <span>Talking to strangers</span>
-  <span>Conscious breathing</span>
-  <span>Loremaxxing and looksmaxxing</span>
-  <span>Embodied gratitude</span>
-  <span>Daddy Yankee</span>
-  <span>Taking notes on paper</span>
-  <span>Guessing ethnicities</span>
-</div>
+    <div class="Welcome">
+      <p>My name is Sarah, Sarita if I'm feeling spicy. </p>
+      <br>
+      <h3 class="ind">I am a fan of:</h3>
+      <div class="interest-grid">
+        <span>The color red</span>
+        <span>Unprompted deep conversations</span>
+        <span>Pullups, pushups, and the StairMaster</span>
+        <span>Nature walks</span>
+        <span>Evolutionary psychology</span>
+        <span>Open-minded and enthusiastic people</span>
+        <span>Loose-leaf tea</span>
+        <span>Linear algebra</span>
+        <span>Natural-fiber clothing</span>
+        <span>Talking to strangers</span>
+        <span>Conscious breathing</span>
+        <span>Loremaxxing and looksmaxxing</span>
+        <span>Embodied gratitude</span>
+        <span>Daddy Yankee</span>
+        <span>Taking notes on paper</span>
+        <span>Guessing ethnicities</span>
+      </div>
 
       <p>If any of my favorite things are also your favorite things, how about you stick around? :)</p>
     </div>
-     <div class="parallax-container-3">
-        <div class="overlay-text">Let's be friends? </div>
-      </div>
-      <div class="Welcome">
-        <p>I appreciate you and I would love to get to know you more.</p>
-        <br>
-        <p>Please don't hesitate to reach out at thesarahera@gmail.com. </p>
-        <br>
-        <p>I did say that I am a fan of talking to strangers, but if you've read this far, I'm going to assume that we are besties! </p>
-        <br>
-        <p> Welcome home, bestie!! </p>
-      </div>
-    <footer>
-      <p>The Sarah Era ♡</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
-</html>
+    <div class="parallax-container-3">
+      <div class="overlay-text">Let's be friends? </div>
+    </div>
+    <div class="Welcome">
+      <p>I appreciate you and I would love to get to know you more.</p>
+      <br>
+      <p>Please don't hesitate to reach out at thesarahera@gmail.com. </p>
+      <br>
+      <p>I did say that I am a fan of talking to strangers, but if you've read this far, I'm going to assume that we are besties! </p>
+      <br>
+      <p> Welcome home, bestie!! </p>
+    </div>
+  </div>
+</div>
+<script src="/home.js"></script>

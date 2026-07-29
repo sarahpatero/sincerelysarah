@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="/main.css" />
+    {% if page.layout == "post" %}<link rel="stylesheet" href="/posts/posts.css" />{% endif %}
+    {% if page.stylesheet %}<link rel="stylesheet" href="{{ page.stylesheet }}" />{% endif %}
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/images/rose.png" />
+  </head>
+  <body>
+    <header>
+      <h1>The Sarah Era ♡</h1>
+    </header>
+    <nav>
+      <a href="/index.html">HOME</a>
+      <a href="/blog.html">BLOG</a>
+      <a href="/gallery.html">GALLERY</a>
+      <a href="/contact.html">CONTACT</a>
+    </nav>
+
+    {{ content }}
+
+    <footer>
+      <p>The Sarah Era ♡</p>
+    </footer>
+  </body>
+</html>

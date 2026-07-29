@@ -1,0 +1,12 @@
+title: The Sarah Era
+description: Sarah's thought garden.
+url: "https://thesarahera.co"
+
+markdown: kramdown
+permalink: /posts/:title.html
+timezone: America/New_York
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="blog-post">
+  <h1 class="title">{{ page.title }}</h1>
+
+  <div class="author-info">
+    <img class="profile-picture" src="/images/sarah pfp.jpg" alt="Sarah's Profile Picture">
+    <div class="author-details">
+      <p class="author-name">Sarah</p>
+      {% if page.date %}
+      <p class="post-date">Published on {{ page.date | date: "%B %-d, %Y" }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <hr class="separator">
+
+  {% if page.image %}
+  <div class="post-image">
+    <img src="{{ page.image }}" alt="{{ page.image_alt | default: page.title }}">
+  </div>
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</div>
