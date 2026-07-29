@@ -162,6 +162,7 @@ ul {
     box-sizing: border-box;
   }
   .blog-post {
+    box-sizing: border-box;
     max-width: 800px;
     margin: 0 auto;
     background-color: #fdf8fa;
@@ -169,26 +170,35 @@ ul {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Title */
-  .post-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+
+  /* Title (matches the h1.title element the post layout actually renders -
+     without this, post titles fell back to the site header's 75pt cursive h1 style) */
+  .title {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    letter-spacing: 0;
     color: #333;
+    text-shadow: none;
+    margin-bottom: 10px;
+    line-height: 1.2;
   }
-  
+
   /* Author info section */
   .author-info {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 15px;
   }
-  
+
   .profile-picture {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
+    flex-shrink: 0;
   }
   
   .author-details {

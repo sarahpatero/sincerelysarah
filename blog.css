@@ -95,6 +95,7 @@
 
 /* Blog Post Content Layout */
 .blog-post {
+  box-sizing: border-box;
   display: flex;
   align-items: center; /* Align the image and text vertically */
   gap: 20px; /* Space between the image and the content */
@@ -115,6 +116,25 @@
 /* Content Area of Blog Post */
 .blog-post-content {
   flex-grow: 1; /* Makes the content area take up remaining space */
+  min-width: 0; /* lets long titles/descriptions wrap instead of forcing overflow */
+}
+
+/* Stack the thumbnail above the text on narrow screens instead of squeezing them side by side */
+@media screen and (max-width: 600px) {
+  .blog-post {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .blog-post-image img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+  }
+
+  .blog-section {
+    padding: 0 12px;
+  }
 }
 
 /* Footer Styles */
@@ -132,6 +152,7 @@ footer {
 /* Style for the pagination container */
 #pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
