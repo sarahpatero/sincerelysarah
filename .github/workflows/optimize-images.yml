@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0 # full history, so the before-SHA below is always available locally
 
       - uses: actions/setup-node@v4
         with:
@@ -27,8 +27,19 @@ jobs:
 
       - name: Find changed images
         id: changed
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
         run: |
-          git diff --name-only HEAD~1 HEAD -- gallery images \
+          # Diff against the push's actual before/after commits, not HEAD~1 - for a
+          # merge commit, HEAD~1 (first parent only) makes every file the other side
+          # of the merge touched look "changed", even if it was already compressed.
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
+            BASE=$(git hash-object -t tree /dev/null) # new branch: treat everything as new
+          else
+            BASE="$BEFORE"
+          fi
+          git diff --name-only "$BASE" "$AFTER" -- gallery images \
             | grep -Ei '\.(jpe?g|png|webp)$' > "$RUNNER_TEMP/changed_images.txt" || true
           echo "count=$(wc -l < "$RUNNER_TEMP/changed_images.txt")" >> "$GITHUB_OUTPUT"
 
