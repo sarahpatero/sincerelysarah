@@ -1,8 +1,9 @@
 const images = [];
 for (let i = 1; i <= 111; i++) {
-  // gallery/1.jpg..100.jpg are lowercase, gallery/101.JPG..111.JPG are uppercase
-  const ext = i <= 100 ? "jpg" : "JPG";
-  images.push(i + "." + ext);
+  // All gallery files are tracked in git (and served by GitHub Pages) as
+  // uppercase .JPG - Windows' filesystem can display some of them as
+  // lowercase locally, but that's not what actually gets deployed.
+  images.push(i + ".JPG");
 }
 
 // Fisher-Yates Shuffle

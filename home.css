@@ -104,4 +104,14 @@ margin-left: 10px;
     .overlay-text {
         font-size: 24px; /* Adjust text size for mobile */
     }
+
+    /* background-attachment: fixed is unreliable on mobile browsers (iOS Safari
+       largely ignores it, and combined with overflow:hidden on an ancestor it
+       often just fails to paint at all) - fall back to a normal scrolling
+       background so the images actually show up. */
+    .parallax-container-1,
+    .parallax-container-2,
+    .parallax-container-3 {
+        background-attachment: scroll;
+    }
 }
