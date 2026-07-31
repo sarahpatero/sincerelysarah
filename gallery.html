@@ -14,4 +14,18 @@ stylesheet: /gallery.css
   <div class="grid" id="gallery"></div>
 </div>
 
+<script>
+  // Generated at build time from whatever image files actually exist in /gallery/ -
+  // drop a photo in that folder (any filename) and it shows up here automatically,
+  // no renaming or manual list-updating needed.
+  {% assign image_exts = ".jpg,.jpeg,.png,.webp" | split: "," %}
+  const galleryImages = [
+    {% for f in site.static_files %}
+      {% assign ext = f.extname | downcase %}
+      {% if f.path contains "/gallery/" and image_exts contains ext %}
+      {{ f.path | jsonify }},
+      {% endif %}
+    {% endfor %}
+  ];
+</script>
 <script src="/gallery.js"></script>

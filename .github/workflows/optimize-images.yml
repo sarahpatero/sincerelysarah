@@ -1,0 +1,49 @@
+name: Optimize images
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "gallery/**"
+      - "images/**"
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    # the commit this workflow makes triggers another push - without this
+    # guard it would try to compress its own already-compressed output forever
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Find changed images
+        id: changed
+        run: |
+          git diff --name-only HEAD~1 HEAD -- gallery images \
+            | grep -Ei '\.(jpe?g|png|webp)$' > "$RUNNER_TEMP/changed_images.txt" || true
+          echo "count=$(wc -l < "$RUNNER_TEMP/changed_images.txt")" >> "$GITHUB_OUTPUT"
+
+      - name: Install sharp
+        if: steps.changed.outputs.count != '0'
+        working-directory: .github/scripts
+        run: npm install
+
+      - name: Compress changed images
+        if: steps.changed.outputs.count != '0'
+        run: node .github/scripts/optimize-images.mjs "$RUNNER_TEMP/changed_images.txt"
+
+      - name: Commit compressed images
+        if: steps.changed.outputs.count != '0'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-compress newly added images"
+          file_pattern: "gallery/** images/**"

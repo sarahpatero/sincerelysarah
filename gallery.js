@@ -1,10 +1,6 @@
-const images = [];
-for (let i = 1; i <= 111; i++) {
-  // All gallery files are tracked in git (and served by GitHub Pages) as
-  // uppercase .JPG - Windows' filesystem can display some of them as
-  // lowercase locally, but that's not what actually gets deployed.
-  images.push(i + ".JPG");
-}
+// galleryImages is injected by gallery.html, generated at build time from
+// whatever files are actually in /gallery/ - see that file for details.
+const images = galleryImages.slice();
 
 // Fisher-Yates Shuffle
 for (let i = images.length - 1; i > 0; i--) {
@@ -15,7 +11,7 @@ for (let i = images.length - 1; i > 0; i--) {
 const galleryDiv = document.getElementById('gallery');
 
 // Load images into gallery
-images.forEach(filename => {
+images.forEach(path => {
   const galleryItem = document.createElement('div');
   galleryItem.className = 'gallery-item';
 
@@ -23,8 +19,8 @@ images.forEach(filename => {
   imageContainer.className = 'image-container';
 
   const img = document.createElement('img');
-  img.src = `/gallery/${filename}`;
-  img.alt = filename;
+  img.src = path;
+  img.alt = path.split('/').pop();
 
   imageContainer.appendChild(img);
   galleryItem.appendChild(imageContainer);
