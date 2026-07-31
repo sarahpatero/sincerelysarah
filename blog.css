@@ -129,7 +129,7 @@
   .blog-post-image img {
     width: 100%;
     height: auto;
-    max-height: 220px;
+    aspect-ratio: 1 / 1; /* stay square, cropped via the object-fit: cover set above */
   }
 
   .blog-section {
